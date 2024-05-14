@@ -8,6 +8,10 @@
  
  html {
     font-size: 62.5%;
+    box-sizing: border-box;
+ }
+ *, *:before, *:after {
+   box-sizing: inherit;
  }
  body {
     font-size: 16px; /*1rem = 10px*/
@@ -25,7 +29,7 @@
  }
 
  .contenedor{
-   width: 120rem;
+   max-width: 120rem;
    margin: 0 auto;
  }
 .nav-bg{
@@ -33,9 +37,18 @@
 }
  .navegacion-principal{
    display: flex;
-   justify-content: space-between;
+   flex-direction: column;
+ }
+
+ @media (min-width: 768px) {
+      .navegacion-principal{
+         flex-direction: row;
+         justify-content: space-between;
+      }
  }
 .navegacion-principal a {
+   display: block;
+   text-align: center;
    color: var(--blanco);
    text-decoration: none;
    font-size: 2rem;
@@ -45,4 +58,12 @@
 .navegacion-principal a:hover {
    background-color: var(--primario);
    color: var(--oscuro);
+}
+
+.hero {
+   background-image: url(../img/hero.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 450px;
+   padding: 20px;
 }
