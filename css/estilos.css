@@ -5,10 +5,10 @@
    --secundario: #0097a7;
    --gris: #757575;
 }
- 
+ /*Globales*/
  html {
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box;/* Hack para Box Model */
  }
  *, *:before, *:after {
    box-sizing: inherit;
@@ -17,27 +17,10 @@
     font-size: 16px; /*1rem = 10px*/
     font-family: "Krub", sans-serif;
  }
- h1 {
-   font-size: 3.8rem; 
- }
- h2 {
-   font-size: 2.8rem; 
- }
-h3 {
-   font-size: 1.8rem; 
-}
-h1, h2, h3 {
-   text-align: center;
-}
- .titulo span {
-   font-size: 2rem;
- }
-
  .contenedor{
    max-width: 120rem;
    margin: 0 auto;
  }
-
  .boton {
    background-color: var(--secundario);
    color: var(--blanco);
@@ -56,6 +39,27 @@ h1, h2, h3 {
          width: auto;
       }
  }
+
+ /* Tipografia*/
+ h1 {
+   font-size: 3.8rem; 
+ }
+ h2 {
+   font-size: 2.8rem; 
+ }
+h3 {
+   font-size: 1.8rem; 
+}
+h1, h2, h3 {
+   text-align: center;
+}
+
+/* Titulos */
+ .titulo span {
+   font-size: 2rem;
+ }
+
+/* Navegacion Principal */
 .nav-bg{
    background-color: var(--secundario);
 }
@@ -84,6 +88,7 @@ h1, h2, h3 {
    color: var(--oscuro);
 }
 
+/* Hero */
 .hero {
    background-image: url(../img/hero.jpg);
    background-repeat: no-repeat;
@@ -108,7 +113,7 @@ h1, h2, h3 {
    color: var(--blanco);
 }
 
-.ubicacion {
+.contenido-hero .ubicacion {
    display: flex;
    align-items: flex-end;
 }
