@@ -128,3 +128,58 @@ h1, h2, h3 {
    display: flex;
    align-items: flex-end;
 }
+
+/*Servicios*/
+
+.servicios {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   /*  grid-template-columns: 33.3% 33.3% 33.3%;
+   grid-template-columns: 1fr 1fr 1fr;*/
+   column-gap: 2rem;  /* separacion entre columnas */
+
+}
+.servicio {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.servicio h3 {
+   color: var(--secundario);
+   font-weight: normal;
+}
+.servicio p {
+   line-height: 2; /* espacio entre lineas del parrafo */
+}
+.servicio .iconos {
+   height: 15rem;
+   width: 15rem;
+   background-color: var(--primario);
+   border-radius: 50%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+/* Formulario */
+
+.formulario {
+   background-color: var(--gris);
+   width: min( 60rem, 100%); /* Utilizar el valor mas pequeño */
+   margin: 0 auto;
+   padding: 2rem;
+   border-radius: 1rem;
+}
+.formulario fieldset {
+   border: none;
+}
+
+.formulario legend {
+   text-align: center;
+   font-size: 1.8rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   margin-bottom: 2rem;
+   color: var(--primario);
+}
